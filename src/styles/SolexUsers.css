@@ -1,0 +1,137 @@
+.solexUsersBar {
+  padding-top: 5rem;
+}
+
+.solexUserWrap {
+  display: grid;
+  grid-template-columns: 1fr 2.5fr;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: auto;
+  margin-top: 2rem;
+  align-items: flex-start;
+}
+
+.solexUserReview {
+  display: inline-block;
+  color: black;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.4rem;
+}
+
+.solexUsersAbout {
+  margin-top: -0.5rem;
+}
+.solextUserListingBar {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.solextUserListingBar h3 {
+  margin-bottom: 1.5rem;
+  font-size: 1.3rem;
+  text-transform: capitalize;
+}
+
+.solexUserListing {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 340px;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.solexUserListingList img {
+  width: 340px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.solexUserPInfoTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+}
+
+.solexUserPInfoTop h4 {
+  margin: 0;
+  padding: 0;
+  font-size: 1.15rem;
+  text-transform: capitalize;
+  color: black;
+}
+
+.solexUserPInfoTop span {
+  margin: 0;
+  padding: 0;
+  color: black;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.solexUserPInfo p {
+  margin-top: 0.2rem;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 0.9rem;
+  color: black;
+}
+
+.solexUserAReviewsBar {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.solexUserAReviewsBar h3 {
+  display: flex;
+  align-items: center;
+  margin-top: 1.5rem;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.solexUserAReviewsBar p {
+  font-size: 1rem;
+  text-decoration: none;
+  margin-bottom: 1.3rem;
+}
+
+.solexAReviews {
+  margin-top: -2rem;
+}
+
+.solexAReviews p {
+  margin: 0;
+  padding: 0;
+}
+
+.solexAReviews span {
+  margin: 0;
+  padding: 0;
+}
+
+.solextRevMsg {
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.SolexvList {
+  background-color: whitesmoke;
+  padding: 1rem;
+  padding-bottom: 0;
+  border-radius: 10px;
+}
+
+.SolexzeroReview h2 {
+  font-size: 1.2rem;
+}
+
+.SolexzeroReview p {
+  font-size: 0.85rem;
+  font-weight: 400;
+}

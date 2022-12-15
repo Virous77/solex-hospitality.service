@@ -1,0 +1,68 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 5rem;
+  box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.05);
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1010;
+  background-color: white;
+}
+
+.userNav {
+  box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.2);
+  padding: 0.5rem;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-left: 1rem;
+  cursor: pointer;
+}
+
+.logo h1 {
+  font-size: 2rem;
+}
+
+.userNav img {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 100px;
+}
+
+.navMenu {
+  font-size: 1.5rem;
+}
+
+.popup {
+  position: absolute;
+  z-index: 10000;
+  right: 5%;
+  top: 90%;
+  background-color: white;
+  box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.1);
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 10px;
+}
+
+.popup a {
+  color: black;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.popup p {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.popup p:hover {
+  color: #ff385c;
+}

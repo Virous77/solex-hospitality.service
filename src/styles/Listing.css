@@ -1,0 +1,509 @@
+.addListingBar {
+  padding: 1rem;
+}
+
+.addListingWrap {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  height: 75vh;
+}
+
+.subRight img {
+  width: 100px;
+  height: 100px;
+}
+
+.leftSec {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.leftWrap {
+  display: grid;
+  grid-template-columns: 1fr 100px;
+  gap: 2rem;
+}
+
+.subRights {
+  display: grid;
+  grid-template-columns: 20px 1fr;
+  align-items: flex-start;
+}
+
+.subSecRight p {
+  margin-top: 2px;
+  font-weight: bold;
+}
+
+.getStarted {
+  text-align: end;
+}
+
+.getStarted button {
+  background-color: #ff385c;
+  color: white;
+  font-size: 0.9rem;
+}
+
+.tellUsWrap {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  align-items: center;
+  height: 75vh;
+}
+
+.leftTell {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.leftTell h1 {
+  font-size: 2.5rem;
+}
+
+.leftTell p {
+  font-size: 1rem;
+  line-height: 1.2;
+}
+
+.rightTell {
+  justify-self: center;
+}
+
+.rightTell img {
+  width: 300px;
+  height: 300px;
+}
+
+.nextAction {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.back {
+  border: 2px solid black;
+  font-size: 0.9rem;
+}
+
+.next {
+  background-color: black;
+  color: white;
+}
+
+.svgBar {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding-bottom: 8rem;
+}
+
+.svg {
+  width: 700px;
+  margin: auto;
+  padding: 1rem;
+}
+
+.svgList {
+  text-align: center;
+  padding: 1rem 0;
+  border: 2px solid rgb(219, 219, 219);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.typesvgList {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.typesvgList img {
+  width: 4rem;
+}
+
+.svgList:hover {
+  border: 2px solid black;
+}
+
+.svgList p {
+  font-weight: 600;
+}
+
+.activeSvg {
+  border: 2px solid black;
+  background-color: whitesmoke;
+}
+
+.placeType {
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 700px;
+  margin: auto;
+}
+
+.placeType h1 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.placeWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.placeList {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 100px;
+  gap: 3rem;
+  border: 2px solid rgb(219, 219, 219);
+  padding: 1.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.placeList:hover {
+  border: 2px solid black;
+}
+
+.placeActive {
+  background-color: whitesmoke;
+  border: 2px solid black;
+}
+
+.placeLogo {
+  justify-self: flex-end;
+}
+
+.placeLeft p {
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+  font-size: 1.1rem;
+}
+
+.placeLeft span {
+  font-size: 0.9rem;
+}
+
+.secAction {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  z-index: 10;
+  padding: 2rem;
+  padding-bottom: 4rem;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 21rem;
+  padding-right: 4rem;
+}
+
+.formTwoSec {
+  padding: 2rem;
+  width: 700px;
+  margin: auto;
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.formTwoWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.formTwoInput {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  height: 150px;
+}
+
+.formTwoInput label {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.formTwoInput input {
+  padding: 20px;
+  font-size: 1rem;
+  border: 2px solid rgb(219, 219, 219);
+  background-color: white;
+}
+
+.formTwoInput input:focus {
+  border: 2px solid black;
+  background-color: whitesmoke;
+}
+
+.formTwoInput input::placeholder {
+  letter-spacing: 1px;
+}
+
+.formTwoInput textarea {
+  padding: 20px;
+  font-family: inherit;
+  font-size: 1.1rem;
+  border: 2px solid rgb(219, 219, 219);
+  background-color: white;
+  border-radius: 10px;
+}
+
+.formTwoInput textarea:focus {
+  border: 2px solid black;
+  background-color: whitesmoke;
+}
+
+.formThreeSec {
+  padding: 2rem;
+  width: 700px;
+  margin: auto;
+}
+
+.count {
+  padding: 2rem;
+  width: 700px;
+  margin: auto;
+}
+
+.head p {
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+.head {
+  margin-bottom: 3rem;
+}
+
+.guest {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2rem 1rem;
+}
+
+.guestData {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.guestRight {
+  justify-self: flex-end;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 40px 20px 40px;
+  gap: 1rem;
+}
+
+.guestLeft p {
+  font-weight: 600;
+}
+
+.guestRight p {
+  border-radius: 100px;
+  height: 30px;
+  width: 30px;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgb(219, 219, 219);
+  cursor: pointer;
+}
+
+.guestRight p:hover {
+  background-color: whitesmoke;
+  border: 2px solid black;
+}
+
+.imageWrap {
+  border: 1px solid rgb(219, 219, 219);
+  padding: 2rem;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.noIg {
+  height: 400px;
+}
+
+.imageWrapHeight {
+  height: auto;
+}
+
+.formImage {
+  text-align: center;
+  position: relative;
+}
+
+.formImage input {
+  width: 3rem;
+  height: 4rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 3;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+.formImage img {
+  width: 5rem;
+  height: 5rem;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  z-index: 2;
+  transform: translate(-50%, -50%);
+}
+
+.formImage p {
+  font-size: 0.7rem;
+  margin-top: 6rem;
+}
+
+.imgList {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.imgList img {
+  width: 150px;
+  height: 120px;
+}
+
+.imgLists {
+  position: relative;
+}
+
+.imgList button {
+  background-color: transparent;
+  padding: 0;
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  color: red;
+  cursor: pointer;
+  font-size: 1.1rem;
+  z-index: 2;
+  border: 0;
+}
+
+.imgList button:hover {
+  border: 0;
+}
+
+.load {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.load p {
+  font-size: 0.9rem;
+  color: #ff385c;
+}
+
+.bedRoom h3 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.bedBar {
+  width: 700px;
+  padding: 2rem;
+  margin: auto;
+  padding-bottom: 8rem;
+}
+
+.bedSvgBar {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.bedSvgBar img {
+  width: 40px;
+  height: 40px;
+}
+
+.bedSvgList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border: 2px solid rgb(219, 219, 219);
+  flex-direction: column;
+  padding: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.bedSvgList:hover {
+  border: 2px solid black;
+}
+
+.bedActive {
+  border: 2px solid black;
+  background-color: whitesmoke;
+}
+
+.bedSvgList p {
+  font-size: 0.9rem;
+}
+
+.priceSection {
+  width: 700px;
+  height: 75vh;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.priceSection h3 {
+  margin-bottom: 3rem;
+}
+
+.priceConta label {
+  margin-bottom: 0.7rem;
+  display: block;
+}
+
+.priceConta input {
+  padding: 20px;
+  font-size: 2rem;
+}
+
+.priceAction {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.priceAction button {
+  padding: 0;
+  background-color: transparent;
+  color: #ff385c;
+}
+
+button:disabled {
+  color: gray;
+  cursor: not-allowed;
+}

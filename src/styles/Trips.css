@@ -1,0 +1,144 @@
+.tripNav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem;
+  background-color: whitesmoke;
+  margin-top: 0.3rem;
+}
+
+.tripNav p {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.tripNavActive {
+  color: #ff385c;
+  text-decoration: underline;
+}
+
+.pendingBar {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.pendingWrap {
+  background-color: whitesmoke;
+  padding: 1rem;
+  border-radius: 10px;
+  display: grid;
+  align-items: flex-start;
+  gap: 1.5rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.pendingTop img {
+  border-radius: 5px;
+  height: 150px;
+}
+
+.pendingInfo {
+  margin-top: 0.5rem;
+}
+
+.pendingInfo h4 {
+  text-transform: capitalize;
+}
+
+.pendingInfo span {
+  text-transform: capitalize;
+  font-size: 0.9rem;
+  display: inline-block;
+  margin-top: 0.2rem;
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.status span {
+  background-color: red;
+  color: white;
+  padding: 3px 7px;
+  border-radius: 3px;
+  font-size: 0.9rem;
+}
+
+.pendingBooking {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.pendingBookTop {
+  display: grid;
+  align-items: center;
+  gap: 2rem;
+  grid-template-columns: 100px 1fr;
+  font-size: 0.95rem;
+}
+
+.pendingAction {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.pendingAction button {
+  padding: 7px 16px;
+  border-radius: 3px;
+  color: white;
+  font-size: 0.9rem;
+}
+
+.payPopup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  z-index: 100000;
+  width: 500px;
+}
+
+.payTops {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  margin-bottom: 2rem;
+}
+
+.payIcon {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.widthIt {
+  width: 100%;
+}
+
+.paymentAction h3 {
+  margin-bottom: 1rem;
+}
+
+.paymentAction button {
+  background-color: #ff385c;
+  color: white;
+  width: 100%;
+  margin-top: 1rem;
+  padding: 6px;
+}
+
+.initial h4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+}

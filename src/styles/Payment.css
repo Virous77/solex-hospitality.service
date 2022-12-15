@@ -1,0 +1,378 @@
+.paymentBar {
+  margin-top: 2rem;
+}
+
+.cardSection {
+  margin-top: 2rem;
+}
+
+.payTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.visa {
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+}
+
+.visa img {
+  width: 2rem;
+}
+
+.payCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1.5px solid gray;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.payCards {
+  margin-top: -1rem;
+}
+
+.leftPay {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.leftPay img {
+  width: 2rem;
+}
+
+.payDown {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.leftPay p {
+  font-size: 0.95rem;
+}
+
+.payCardT {
+  position: absolute;
+  width: 100%;
+  top: 90%;
+  background-color: whitesmoke;
+}
+
+.parentPay {
+  position: relative;
+}
+
+.require {
+  margin-top: 3rem;
+}
+
+.requireContent {
+  margin-top: 2rem;
+}
+
+.requireParent {
+  margin-top: -1rem;
+}
+
+.hostRequire {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.leftRequire2 {
+  margin-top: 3rem;
+}
+
+.leftRequire span {
+  font-size: 0.85rem;
+  display: block;
+  margin-top: 0.2rem;
+}
+
+.hostRequire button {
+  border: 1px solid black;
+  background-color: white;
+  border-radius: 5px;
+  padding: 7px 11px;
+  font-size: 0.9rem;
+}
+
+.hostRequire button:hover {
+  background-color: whitesmoke;
+}
+
+.hostBookMessage {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 550px;
+  height: fit-content;
+  z-index: 100000;
+  transform: translate(-50%, -50%);
+}
+
+.hostBookMessage form button {
+  width: 100%;
+  background-color: black;
+  color: white;
+}
+
+.hostBookMessage form button:hover {
+  background-color: rgb(29, 29, 29);
+}
+
+.hostBookMessage h2 {
+  margin-bottom: -0.6rem;
+  padding-bottom: 0;
+}
+
+.hostBookMessage p {
+  margin-bottom: 2rem;
+  font-size: 0.85rem;
+}
+
+.hostBookMessage form button:disabled {
+  background-color: rgb(113, 113, 113);
+}
+
+.trim {
+  height: fit-content;
+  margin-top: 2rem;
+}
+
+.topBookHost {
+  padding-bottom: 1rem;
+  display: grid;
+  grid-template-columns: 160px 1fr;
+}
+
+.vscIcon {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.messageHost {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.messageHost img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 100px;
+}
+
+.hostMessageInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.hostMessageInfo b {
+  color: black;
+  text-transform: capitalize;
+}
+
+.hostMessageInfo span {
+  margin-top: 0.2rem;
+  display: block;
+  font-size: 0.8rem;
+}
+
+.hostMessageIcon {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 100px;
+  background-color: rgb(226, 226, 226);
+  color: white;
+}
+
+.editProfile {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 550px;
+  z-index: 100000;
+}
+
+.editProfileContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+  flex-direction: column;
+}
+
+.notUserProfile {
+  width: 8rem;
+  height: 8rem;
+  background-color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+}
+
+.notUserIcon {
+  width: 4rem;
+  height: 4rem;
+  opacity: 0.6;
+}
+
+.editProfileContent p {
+  margin-top: 3rem;
+  font-size: 0.9rem;
+}
+
+.editUpload input {
+  display: none;
+}
+
+.editUpload {
+  width: 100%;
+}
+
+.editUpload label {
+  margin-top: 3rem;
+  display: inline-block;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.editUpload label:hover {
+  background-color: whitesmoke;
+}
+
+.newEdit label {
+  margin-top: 1rem;
+}
+
+.doneEdit label {
+  color: white;
+  background-color: black;
+}
+
+.doneEdit label:hover {
+  background-color: rgb(24, 24, 24);
+}
+
+.imgEdit {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 100px;
+}
+
+.ground {
+  margin-top: 2rem;
+}
+
+.ground h3 {
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+.ground p {
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.ground span {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.policy {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.policy img {
+  width: 2rem;
+}
+
+.policy p {
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+}
+
+.policy span {
+  font-weight: 400;
+  display: inline-block;
+  margin-top: 0.2rem;
+}
+
+.policyHead {
+  margin-top: 2rem;
+}
+
+.submitBook {
+  margin-top: 3rem;
+}
+
+.submitBook button {
+  border-radius: 5px;
+  color: white;
+  font-weight: 600;
+  font-size: 0.95rem;
+  background-color: #ff385c;
+}
+
+.alertPic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  width: 400px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100000;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.alertPicIcon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.alertPic p {
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+  color: red;
+}
+
+.alertPic button {
+  background-color: black;
+  color: white;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  padding: 7px 0;
+}

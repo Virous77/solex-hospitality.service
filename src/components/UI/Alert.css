@@ -1,0 +1,46 @@
+.alertCompList {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 10px;
+  padding: 2rem;
+  z-index: 1000000;
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.alertCompList img {
+  width: 15rem;
+}
+
+.alertCompList p {
+  margin-top: 0.7rem;
+  font-size: 0.9rem;
+  width: 90%;
+  margin: auto;
+}
+
+.alertCompAction {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+.alertCompAction button {
+  padding: 8px 14px;
+  font-size: 0.9rem;
+  color: white;
+  background-color: black;
+  border-radius: 4px;
+}
+
+.alertCompAction button a {
+  color: white;
+}

@@ -1,0 +1,42 @@
+.bookingDone {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 450px;
+  z-index: 100000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.doneIt img {
+  width: 6rem;
+  margin-bottom: 3rem;
+}
+
+.bookingDone p {
+  margin-bottom: 0.5rem;
+}
+
+.bookingDone span {
+  font-size: 0.9rem;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.bookingDone button {
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.bookingDone button:hover {
+  background-color: rgb(27, 27, 27);
+}

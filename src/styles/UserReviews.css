@@ -1,0 +1,239 @@
+.linkSection {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.linkSection span {
+  font-size: 0.7rem;
+}
+
+.linkSection span a {
+  color: black;
+}
+
+.linkSection span a:hover {
+  text-decoration: underline;
+}
+
+.userReviewsPageBar {
+  width: 60%;
+}
+
+.userReviewsPageBar h1 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.fccc {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 600;
+  padding: 10px;
+  padding-left: 0;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  margin-right: 6px;
+  transition: box-shadow 0.2s ease 0s, -ms-transform 0.1s ease 0s,
+    -webkit-transform 0.1s ease 0s, transform 0.1s ease 0s;
+  position: relative;
+  color: rgb(34, 34, 34);
+  cursor: default;
+}
+
+.fccc::after {
+  content: "";
+  position: absolute;
+  background-color: rgb(34, 34, 34);
+  bottom: -6px;
+  left: 1px;
+  width: calc(100% - 10px);
+  height: 2px;
+}
+
+.reviewNav {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.fcx {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 600;
+  color: rgb(113, 113, 113);
+  padding: 10px;
+  padding-left: 0;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  margin-right: 6px;
+  transition: box-shadow 0.2s ease 0s, -ms-transform 0.1s ease 0s,
+    -webkit-transform 0.1s ease 0s, transform 0.1s ease 0s;
+  position: relative;
+  cursor: pointer;
+}
+
+.zeroReview {
+  margin-top: 2rem;
+}
+
+.zeroReview h2 {
+  margin-bottom: 0.5rem;
+}
+
+.zeroReview p {
+  font-size: 0.9rem;
+}
+
+.myReviewBar {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.myRevProfile {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.myRevProfile img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 100px;
+}
+
+.myRevInfo {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.myRevList p {
+  margin: 1rem;
+  letter-spacing: 0.2px;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.myRevPInfo span {
+  display: inline-block;
+  margin-top: 0.2rem;
+  font-size: 0.8rem;
+}
+
+.usRevTop {
+  display: grid;
+  grid-template-columns: 215px 1fr;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+
+.usRevInfo {
+  display: grid;
+  grid-template-columns: 230px 1fr;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.usRevProperty img {
+  width: 140px;
+  height: 90px;
+  border-radius: 5px;
+}
+
+.usRevProperty h4 {
+  white-space: nowrap;
+  text-transform: capitalize;
+  margin-top: 0.5rem;
+}
+
+.usRevProperty span {
+  white-space: nowrap;
+  text-transform: capitalize;
+  font-size: 0.9rem;
+}
+
+.usRevRating {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.usRevRating b {
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: black;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.wrapRev {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+}
+
+.wrapRev p {
+  font-size: 0.8rem;
+}
+
+.wrapRev span {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.8rem;
+}
+
+.usRevContent {
+  margin-bottom: 2rem;
+}
+
+.aboutUserRevBar {
+  margin-top: 1rem;
+}
+
+.aboutUserRevBar {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+}
+
+.aboutTopInfo {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.aboutTopInfo img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 100px;
+}
+
+.aboutTopInfo h4 {
+  text-transform: capitalize;
+}
+
+.aboutTopInfo span {
+  font-size: 0.8rem;
+  display: inline-block;
+  margin-top: 0.2rem;
+}
+
+.aboutStar {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.7rem;
+}
+
+.aboutStar span {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}

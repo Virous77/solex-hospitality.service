@@ -1,0 +1,252 @@
+.listingHead {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 0.3rem;
+  background-color: whitesmoke;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.listingHead p {
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.listingActive {
+  text-decoration: underline;
+  color: #ff385c;
+}
+
+.bookedListBar {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.bookedList {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  padding: 1rem;
+  background-color: whitesmoke;
+  border-radius: 10px;
+}
+
+.leftBooked {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.leftBooked img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 100px;
+}
+
+.noBookImg {
+  background-color: white;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.leftBookedInfo h4 {
+  text-transform: capitalize;
+}
+
+.rightBooked {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.bookedAccept {
+  color: white;
+  background-color: #ff385c;
+  border-radius: 5px;
+  padding: 6px 10px;
+  font-size: 0.9rem;
+}
+
+.bookAccepted {
+  padding: 0;
+  color: #ff385c;
+  background-color: transparent;
+  font-size: 0.9rem;
+  border: 0;
+  cursor: auto;
+}
+
+.bookReject {
+  color: white;
+  background-color: red;
+  border-radius: 5px;
+  padding: 6px 10px;
+  font-size: 0.9rem;
+}
+
+.bookAccepted:hover {
+  border: 0;
+  background-color: transparent;
+  border-color: transparent;
+  padding: 0;
+}
+
+.bookedDetails {
+  color: white;
+  background-color: black;
+  border-radius: 5px;
+  padding: 6px 10px;
+  font-size: 0.9rem;
+}
+
+.bookedDetailsBar,
+.alertAccepted {
+  position: fixed;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 2rem;
+  z-index: 1000;
+  border-radius: 10px;
+  width: 550px;
+  height: 600px;
+}
+
+.bookedDTop {
+  display: grid;
+  grid-template-columns: 170px 1fr;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+
+.minimize {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.bookedDataContent {
+  overflow-y: scroll;
+  height: 500px;
+}
+
+.bookedDataContent::-webkit-scrollbar {
+  width: 0;
+  display: none;
+}
+
+.bookedDataTop {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.bookedDataTop img {
+  width: 120px;
+  height: 90px;
+  border-radius: 5px;
+}
+
+.bookedDataTop h4 {
+  text-transform: capitalize;
+  margin-bottom: 0.2rem;
+}
+
+.bookedDataTop span {
+  text-transform: capitalize;
+  font-size: 0.9rem;
+  opacity: 0.9;
+  display: inline-block;
+}
+
+.bookedDataCheck {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.bookedDataCheck h3,
+.guestBookedBar h3,
+.bookedDataPrice h3 {
+  margin-bottom: 1rem;
+}
+
+.guestCheckIn,
+.guestBooked,
+.bookedPricing {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 150px 1fr;
+  gap: 2rem;
+  margin-bottom: 0.6rem;
+}
+
+.guestCheckIn span {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.guestBookedBar,
+.bookedDataPrice {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.to {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.alertAccepted {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.makeAlert {
+  height: fit-content;
+  width: 400px;
+}
+
+.alertAccepted p {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.acceptAction {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  width: 100%;
+}
+
+.acceptAction button {
+  border-radius: 5px;
+  padding: 7px 12px;
+  color: white;
+  font-size: 0.9rem;
+}
+
+.twoAcc {
+  background-color: #ff385c;
+}
+
+.payButton {
+  margin-top: 1rem;
+  border-radius: 3px;
+  color: white;
+  background-color: green;
+  padding: 5px 8px;
+  width: fit-content;
+  font-size: 0.9rem;
+}

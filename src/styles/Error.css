@@ -1,0 +1,26 @@
+.mainErrorBar {
+  padding-top: 5rem;
+}
+
+.mainErrorContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+}
+
+.mainErrorContent img {
+  width: 20rem;
+  margin-bottom: 0.5rem;
+}
+
+.mainErrorContent button {
+  margin-top: 3rem;
+  background-color: black;
+  border-radius: 3px;
+}
+
+.mainErrorContent button a {
+  color: white;
+}

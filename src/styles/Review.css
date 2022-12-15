@@ -1,0 +1,319 @@
+.reviewBar {
+  position: fixed;
+  top: 52%;
+  left: 50%;
+  background-color: white;
+  border-radius: 10px;
+  padding: 2rem;
+  width: 600px;
+  z-index: 100000;
+  transform: translate(-50%, -50%);
+}
+
+.ratingHead {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+}
+
+.rating {
+  margin-top: 2rem;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.ratingHead p {
+  text-transform: capitalize;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.reviewBox p {
+  text-transform: capitalize;
+  margin-bottom: 0.7rem;
+  font-size: 0.9rem;
+}
+
+.reviewBox textarea {
+  font-family: sans-serif;
+  font-size: 1rem;
+  padding: 16px 12px;
+  min-width: 100%;
+  max-width: 100%;
+}
+
+.reviewBox form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+.reviewBox button {
+  background-color: #ff385c;
+  color: white;
+}
+
+.shopReview {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.shopReview img {
+  width: 80px;
+  height: 60px;
+  border-radius: 3px;
+}
+
+.shopReview p {
+  font-weight: bold;
+  text-transform: capitalize;
+  margin-top: 0.4rem;
+}
+
+.shopReview span {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  text-transform: capitalize;
+}
+
+.userRevListBar {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.revList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background-color: whitesmoke;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.revList h2 {
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+
+.revList span {
+  text-transform: capitalize;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.revRate {
+  font-size: 0.8rem;
+}
+
+.revEmpty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.revEmpty img {
+  width: 12rem;
+}
+
+.revEmpty p {
+  opacity: 0.8;
+  text-transform: capitalize;
+  font-size: 0.9rem;
+}
+
+.revList button {
+  background-color: transparent;
+  color: red;
+  padding: 0;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+input[type="range"]:disabled {
+  height: 10px;
+}
+
+.reviewsGraph {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+}
+
+.leftGraph,
+.rightGraph {
+  width: 80%;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.leftSubGraph {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.dataGraph {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.userReviewsList {
+  display: grid;
+  margin-top: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+}
+
+.userReviewInfo img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 100px;
+}
+
+.userReviewInfo {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 0.7rem;
+}
+
+.reviewDate h4 {
+  margin-bottom: 0.1rem;
+  text-transform: capitalize;
+}
+
+.reviewList p {
+  font-size: 0.97rem;
+  letter-spacing: 0.2px;
+  line-height: 1.3;
+}
+
+.showReview {
+  margin-top: 1rem;
+}
+
+.showReview p {
+  text-decoration: underline;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.reviewList {
+  margin-bottom: 1rem;
+}
+
+.mainUserPopBar {
+  position: fixed;
+  top: 53%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 10px;
+  padding: 2rem;
+  z-index: 100000;
+  width: 1000px;
+  height: 600px;
+}
+
+.offReview {
+  padding-bottom: 1rem;
+}
+
+.offIcn {
+  cursor: pointer;
+  font-size: 1.3rem;
+}
+
+.reviewsGraphs {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 3rem;
+}
+
+.revPopup {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 4rem;
+}
+
+.searchReview {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border: 2px solid gray;
+  border-radius: 20px;
+  padding: 1px 10px;
+}
+
+.searchIcon {
+  cursor: pointer;
+  font-size: 1.3rem;
+}
+
+.searchReview input {
+  background-color: white;
+}
+
+.onFocus {
+  border: 2px solid black;
+}
+
+.revReviewListBar {
+  height: 450px;
+  overflow-y: scroll;
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-direction: column;
+}
+
+.revReviewListBar::-webkit-scrollbar {
+  width: 0;
+  display: none;
+}
+
+.activeWord {
+  background-color: yellow;
+}
+
+@media (max-width: 1170px) {
+  .userRevListBar {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 620px) {
+  .reviewsBar {
+    width: 95%;
+  }
+
+  .revEmpty p {
+    font-size: 0.7rem;
+  }
+}
+
+.roomReviewBar {
+  margin-top: 5rem;
+}
+
+.roomReviewBar h2 {
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}

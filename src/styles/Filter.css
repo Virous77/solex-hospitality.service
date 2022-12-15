@@ -1,0 +1,340 @@
+.filterBar {
+  position: fixed;
+  top: 9.6%;
+  left: 0;
+  background-color: white;
+  z-index: 1000;
+  width: 100%;
+  box-shadow: 2px 7px 12px rgba(0, 0, 0, 0.05);
+}
+
+.subFilter {
+  position: relative;
+}
+
+.wrapFilter {
+  padding: 0 5rem;
+}
+.filterType {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.filterType img {
+  width: 32px;
+  height: 32px;
+}
+
+.filterType2 img {
+  width: 32px;
+  height: 32px;
+}
+
+.filterTypeBar {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem 3rem;
+  overflow-x: scroll;
+  height: 100%;
+  width: 91.5%;
+}
+
+.leftFilter {
+  position: absolute;
+  z-index: 3;
+  top: 12%;
+}
+
+.filterTypeBar::-webkit-scrollbar {
+  display: none;
+  width: 0;
+}
+
+.filterType {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.filterType2 {
+  opacity: 0.7;
+  cursor: pointer;
+  position: relative;
+}
+
+.filterType2::after {
+  content: "";
+  position: absolute;
+  background-color: rgb(7, 7, 7);
+  bottom: -15px;
+  left: 1px;
+  width: calc(100%);
+  height: 2px;
+}
+
+.filterType p {
+  white-space: nowrap;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.filterType2 p {
+  white-space: nowrap;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.filterAction button {
+  background-color: rgb(244, 244, 244);
+  padding: 5px;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+}
+
+.leftFilter {
+  padding: 1rem 0;
+  padding-right: 12px;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.rightFilter {
+  padding: 1rem 0;
+  padding-right: 12px;
+  background-color: rgba(255, 255, 255, 0.9);
+  position: absolute;
+  z-index: 3;
+  top: 12%;
+  right: 7%;
+}
+
+.homeFilterBar {
+  position: absolute;
+  padding: 9px;
+  z-index: 3;
+  top: 27%;
+  right: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 1rem;
+  border: 1px solid black;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.homeFilterBar p {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.homeFilterBar:hover {
+  opacity: 0.7;
+}
+
+.filterType2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 1;
+}
+
+.clearFilter {
+  cursor: pointer;
+}
+
+.clearFilter p {
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.masterFilterBar {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  background-color: white;
+  z-index: 100000000;
+  transform: translate(-50%, -50%);
+  width: 700px;
+  border-radius: 10px;
+}
+
+.masterOverLay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10000000;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.masterFilterTop {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 280px 1fr;
+  padding: 1rem 2rem;
+  padding-top: 2rem;
+}
+
+.masterFilterContent {
+  padding: 2rem;
+}
+
+.input {
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.input[type="range"]:focus {
+  outline: none;
+}
+
+.input[type="range"]::-webkit-slider-runnable-track {
+  background-color: #0c0f11;
+  border-radius: 0.5rem;
+  height: 0.5rem;
+}
+
+.input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  margin-top: -12px;
+
+  background-color: #ff385c;
+  height: 2rem;
+  width: 1rem;
+}
+
+.input[type="range"]:focus::-webkit-slider-thumb {
+  border: 1px solid #787878;
+  outline: 3px solid #787878;
+  outline-offset: 0.125rem;
+}
+
+.input[type="range"]::-moz-range-track {
+  background-color: #787878;
+  border-radius: 0.5rem;
+  height: 0.5rem;
+}
+
+/* slider thumb */
+.input[type="range"]::-moz-range-thumb {
+  border: none;
+  border-radius: 0;
+  background-color: #fc5757;
+  height: 2rem;
+  width: 1rem;
+}
+
+.input[type="range"]:focus::-moz-range-thumb {
+  border: 1px solid #787878;
+  outline: 3px solid #787878;
+  outline-offset: 0.125rem;
+}
+
+.masterInputBox {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.masterFirstInput {
+  background-color: white;
+  padding: 3px;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.masterFirstInput input {
+  background-color: white;
+}
+
+.masterFirstInput span {
+  font-size: 0.7rem;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.masterFilterPType {
+  padding: 2rem;
+}
+
+.masterFilterPType h3 {
+  margin-bottom: 2rem;
+}
+
+.masterCheckBoxBar {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+}
+
+.masterFirstCheck {
+  display: grid;
+  align-items: flex-start;
+  gap: 1rem;
+  grid-template-columns: 20px 1fr;
+}
+
+.masterCheckBox {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: rgb(230, 229, 229);
+  border-radius: 1px;
+  cursor: pointer;
+}
+
+.masterCheckInfo span {
+  font-size: 0.85rem;
+  display: inline-block;
+  margin-top: 0.1rem;
+}
+
+.masterFilterAction {
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.masterClear {
+  background-color: transparent;
+  padding: 0;
+  text-decoration: underline;
+  font-weight: 600;
+  border: 0;
+}
+
+.masterShow {
+  background-color: black;
+  color: white;
+  font-size: 1rem;
+  padding: 10px 16px;
+  border-radius: 3px;
+}
+
+.masterFill {
+  background-color: black;
+  color: white;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 1px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

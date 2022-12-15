@@ -1,0 +1,294 @@
+.userProfileBar {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.userImageBar {
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 70vh;
+}
+
+.userImageBar img {
+  width: 9rem;
+  height: 9rem;
+  border-radius: 100px;
+}
+
+.userNoPPhoto {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 100px;
+}
+
+.userImageBar h3 {
+  margin-top: 3rem;
+  text-transform: capitalize;
+}
+
+.userImageBar p {
+  margin-top: 0.7rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.reviewsCountBar p a {
+  color: black;
+}
+
+.userEditProfileBar span {
+  font-size: 0.9rem;
+  margin-bottom: 3rem;
+  display: inline-block;
+}
+
+.userEditProfileBar p {
+  font-weight: 600;
+  font-size: 0.95;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.completeProfile {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 70%;
+}
+
+.notComp {
+  opacity: 0.4;
+}
+
+.reviewsCount {
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+  margin-top: 2rem;
+}
+
+.lineWidth {
+  width: 70%;
+}
+
+.reviewsCountBar p {
+  margin-top: 2rem;
+}
+
+.compAbout {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.compAbout textarea {
+  max-width: 100%;
+  min-width: 100%;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.compAbout input {
+  border: 1px solid gray;
+  padding: 14px;
+  background-color: white;
+}
+
+.compAbout input:focus {
+  border: 2px solid black;
+  padding: 13px;
+}
+
+.completeProfile b {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  color: black;
+  font-weight: 100;
+}
+
+.compAction {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.compAction button {
+  background-color: black;
+  color: white;
+  font-size: 0.95rem;
+  border-radius: 3px;
+}
+
+.reviewsCount {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.compDoneAbout {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.compDoneAbout h3 {
+  margin-bottom: 1.5rem;
+}
+
+.userAbout {
+  color: black;
+  font-weight: 400;
+  font-size: 1.1rem;
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+
+.compDataInfoBar {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.compDataInfo {
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  color: black;
+}
+
+.compDataInfo b span {
+  margin: 0;
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+
+.compDataInfo b {
+  color: black;
+  font-weight: 400;
+  font-size: 0.95rem;
+}
+
+.doneIcon {
+  font-size: 1.2rem;
+}
+
+.langBar {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 10px;
+  padding: 2rem;
+  width: 500px;
+  z-index: 100000;
+}
+
+.langTop {
+  padding-bottom: 1rem;
+  display: grid;
+  grid-template-columns: 150px 1fr;
+}
+
+.langBox p {
+  width: 23px;
+  height: 23px;
+  background-color: whitesmoke;
+  cursor: pointer;
+  border-radius: 1px;
+}
+
+.langList {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.lanContent {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  height: 450px;
+  overflow-y: scroll;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.lanContent span {
+  margin-bottom: 1rem;
+  display: inline-block;
+  margin-top: 0.4rem;
+  font-size: 0.9rem;
+}
+
+.langBox .checked {
+  background-color: rgb(1, 1, 53);
+  color: white;
+}
+
+.langDone {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 2;
+  border-top: 1px solid gray;
+  padding: 0.7rem;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.langDone button {
+  background-color: black;
+  color: white;
+  border-radius: 3px;
+  font-size: 0.95rem;
+  margin-left: 1.1rem;
+}
+
+.lanugUserDone {
+  display: flex;
+  align-items: center;
+  margin-top: 0.4rem;
+  margin-bottom: 0.8rem;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.lanugUserDone button {
+  padding: 5px 9px;
+  border-radius: 30px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.confirmBar {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.confirm {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.langpad {
+  padding-bottom: 3rem;
+}
