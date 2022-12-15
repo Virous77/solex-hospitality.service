@@ -65,9 +65,7 @@ export const ListingContextProvider = ({ children }) => {
 
     if (geolocationEnabled) {
       const response = await fetch(
-        `https://maps.googleapis.com/maps/api/geocode/json?address=${
-          listing.propertyLocation
-        }&key=${import.meta.env.VITE_GEOCODING_APIKEY}`
+        `https://maps.googleapis.com/maps/api/geocode/json?address=${listing.propertyLocation}&key=${process.env.REACT_APP_GEOCODING_APIKEY}`
       );
 
       const data = await response.json();

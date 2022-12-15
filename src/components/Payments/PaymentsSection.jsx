@@ -202,7 +202,17 @@ const PaymentsSection = ({
                 </div>
 
                 <div>
-                  <button onClick={() => setUserProfile(true)}>Add</button>
+                  <button
+                    onClick={() => {
+                      setUserProfile(true);
+                      if (!user.isLoggedIn) {
+                        navigate("/sign-in");
+                        return;
+                      }
+                    }}
+                  >
+                    Add
+                  </button>
                 </div>
               </div>
             )}

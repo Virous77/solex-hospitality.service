@@ -91,7 +91,6 @@ const CreateGuestCard = ({
         <div className="adultsBar">
           <div className="adults">
             <h4>Pets</h4>
-            {/* <span>Under 2</span> */}
           </div>
 
           <div className="guestValue">

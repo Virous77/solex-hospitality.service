@@ -1,0 +1,58 @@
+.shareBar {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 500px;
+  z-index: 1000000;
+  transform: translate(-50%, -50%);
+}
+
+.shareTop {
+  padding-bottom: 1rem;
+}
+
+.shareBar h2 {
+  font-size: 1.2rem;
+}
+
+.shareContent {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  place-items: center;
+}
+
+.shareListItem {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: 1px solid gray;
+  border-radius: 10px;
+  width: 100%;
+  justify-content: center;
+  cursor: pointer;
+  color: black;
+}
+
+.shareListItem p {
+  font-size: 0.9rem;
+}
+
+.shareListItem:hover {
+  background-color: whitesmoke;
+}
+
+.showClip {
+  position: fixed;
+  top: 5%;
+  left: 33%;
+  padding: 0.6rem;
+  background-color: whitesmoke;
+  border-radius: 3px;
+  font-size: 0.8rem;
+}

@@ -1,4 +1,4 @@
-footer {
+.footer {
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -30,4 +30,10 @@ footer {
 
 .social a:hover {
   opacity: 0.7;
+}
+
+.roomFooter {
+  background-color: whitesmoke;
+  margin-top: 2rem;
+  padding: 0.7rem 0;
 }

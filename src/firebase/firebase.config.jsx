@@ -4,18 +4,12 @@ import { getStorage } from "firebase/storage";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCkOrcbmyi5JHToz1dL71dXGva9OPlhijQ",
-  authDomain: "netflix-34efe.firebaseapp.com",
-  projectId: "netflix-34efe",
-  storageBucket: "netflix-34efe.appspot.com",
-  messagingSenderId: "424862539158",
-  appId: "1:424862539158:web:11af0af2061768f3ac91b7",
-
-  // apiKey: import.meta.env.VITE_FIREBASE_API_KEY, authDomain:
-  // import.meta.env.VITE_AUTH_DOMAIN, projectId:
-  // import.meta.env.VITE_PROJECTID, storageBucket:
-  // import.meta.env.VITE_STORAGE_BUCKET, messagingSenderId:
-  // import.meta.env.VITE_MESSAGE_ID, appId: import.meta.env.VITE_APP_ID,
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_PROJECTID,
+  storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_MESSAGE_ID,
+  appId: process.env.REACT_APP_APP_ID,
 };
 
 const app = initializeApp(firebaseConfig);

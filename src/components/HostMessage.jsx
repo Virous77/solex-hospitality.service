@@ -13,9 +13,14 @@ import {
   arrayUnion,
 } from "firebase/firestore";
 import { db } from "../firebase/firebase.config";
+import { useAuthContext } from "../store/authContext";
+import { useNavigate } from "react-router-dom";
 
 const HostMessage = ({ id, bookData, setHostMessage, userActive }) => {
+  const { user } = useAuthContext();
   const [message, setMessage] = useState("");
+  const navigate = useNavigate();
+
   const { data: hostUser } = useFetchCollectionbyParam(
     "uid",
     bookData?.hostId,
@@ -38,6 +43,11 @@ const HostMessage = ({ id, bookData, setHostMessage, userActive }) => {
 
   const sendMessage = async (e) => {
     e.preventDefault();
+
+    if (!user.isLoggedIn) {
+      navigate("/sign-in");
+      return;
+    }
 
     const today = new Date();
     const date = today.toDateString();

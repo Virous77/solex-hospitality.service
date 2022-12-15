@@ -25,12 +25,15 @@ import OwnerSection from "../components/OwnerSection";
 import Calander from "../components/Calander";
 import RoomReview from "../components/RoomReview";
 import Loader from "../components/UI/Loader";
+import Share from "../components/Share";
+import RoomFooter from "../components/layout/RoomFooter";
 
 const Rooms = () => {
   const { id } = useParams();
   const { user, activeUser } = useAuthContext();
   const [showAllImage, setShowAllImage] = useState(false);
   const [showCalander, setShowCalander] = useState(false);
+  const [showShare, setShowShare] = useState("");
   const navigate = useNavigate();
   const { userData, loading } = useFetchUser("property", id);
   const { data } = useFetchCollectionbyParam(
@@ -124,7 +127,10 @@ const Rooms = () => {
               </p>
             </div>
             <div className="rightSub">
-              <div className="share">
+              <div
+                className="share"
+                onClick={() => setShowShare(window.location.href)}
+              >
                 <RiShareForward2Fill />
                 <p>Share</p>
               </div>
@@ -196,6 +202,8 @@ const Rooms = () => {
           scroller2={scroller2}
         />
       </Card>
+      <RoomFooter />
+      {showShare && <Share showShare={showShare} setShowShare={setShowShare} />}
     </section>
   );
 };

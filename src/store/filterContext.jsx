@@ -14,7 +14,7 @@ export const FilterContextProvider = ({ children }) => {
     ?.map((h) => +h.price)
     ?.reduce((acc, curr) => (acc > curr ? acc : curr), 0);
 
-  const minPropertyPrice = data?.map((h) => h.price);
+  const minPropertyPrice = data?.map((h) => +h.price);
   const minPrice = Math.min(...minPropertyPrice);
 
   const [showFilter, setShowFilter] = useState(false);
@@ -25,22 +25,22 @@ export const FilterContextProvider = ({ children }) => {
   const [type, setType] = useState("");
 
   const filterPrice =
-    data?.map((p) => p.price)?.reduce((acc, curr) => +acc + +curr, 0) /
+    data?.map((p) => +p.price)?.reduce((acc, curr) => acc + curr, 0) /
     data?.length;
 
   const submit = () => {
     const filterData = data
       ?.filter((li) => li?.listing?.propertyType?.includes(checkBox))
-      ?.filter((c) => c.price >= lowPrice)
-      ?.filter((z) => z.price >= lowPrice && z.price <= highPrice);
+      ?.filter((c) => +c.price >= lowPrice)
+      ?.filter((z) => +z.price >= lowPrice && +z.price <= highPrice);
 
     setFilterdData(filterData);
   };
 
   const liveData = data
     ?.filter((li) => li?.listing?.propertyType?.includes(checkBox))
-    ?.filter((c) => c.price >= lowPrice)
-    ?.filter((z) => z.price >= lowPrice && z.price <= highPrice);
+    ?.filter((c) => +c.price >= lowPrice)
+    ?.filter((z) => +z.price >= lowPrice && +z.price <= highPrice);
 
   const clear = () => {
     setLowPrice(minPrice);

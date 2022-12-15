@@ -1,13 +1,12 @@
 import React from "react";
-import "../../styles/Footer.css";
-import Card from "../../components/UI/Card";
+import Card from "../UI/Card";
 import { BsTwitter, BsGithub } from "react-icons/bs";
 
-const Footer = () => {
+const RoomFooter = () => {
   const date = new Date();
 
   return (
-    <footer className="footer">
+    <footer className="roomFooter">
       <Card>
         <div className="warpFooter">
           <p>&copy; {date?.getFullYear()} Solex</p>
@@ -27,4 +26,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default RoomFooter;

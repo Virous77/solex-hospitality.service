@@ -4,9 +4,7 @@ import { Elements } from "@stripe/react-stripe-js";
 import { toast } from "react-toastify";
 import CheckoutForm from "./CheckoutForm";
 
-const stripePromise = loadStripe(
-  "pk_test_51MCPQJSHnj0cswqZAK0Vu8w3Xg1odRd3jDRXfE9DGcXE5JPgvELM9ZZE4dhP6wT4RGqymYInfxtSuvtBnQk0xxgA001IazUNCF"
-);
+const stripePromise = loadStripe(process.env.REACT_APP_STRIPE_PUBLIC_KEY);
 
 const CheckoutPayment = ({ setThankYou, data, email }) => {
   const [clientSecret, setClientSecret] = useState("");
@@ -25,7 +23,7 @@ const CheckoutPayment = ({ setThankYou, data, email }) => {
   };
 
   useEffect(() => {
-    fetch("http://localhost:4242/create-payment-intent", {
+    fetch("https://solex.onrender.com/create-payment-intent", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({

@@ -5,10 +5,11 @@ import {
   MdOutlineMenu,
   MdLogout,
   MdOutlineCollectionsBookmark,
+  MdOutlineNewLabel,
 } from "react-icons/md";
 import { FaRegUser, FaUserAlt } from "react-icons/fa";
 import { BiTrip, BiMessageRounded } from "react-icons/bi";
-import { RiFileList3Fill } from "react-icons/ri";
+import { RiFileList3Fill, RiLoginBoxLine } from "react-icons/ri";
 import useFetchCollectionByUid from "../../hooks/useFetchCollectionByUid";
 import "../../styles/Navbar.css";
 import { useFilterContext } from "../../store/filterContext";
@@ -131,6 +132,7 @@ const Navbar = () => {
                   setShowPopUp(false);
                 }}
               >
+                <RiLoginBoxLine />
                 Sign In
               </p>
             </Link>
@@ -143,6 +145,7 @@ const Navbar = () => {
                   setShowPopUp(false);
                 }}
               >
+                <MdOutlineNewLabel />
                 Sign Up
               </p>
             </Link>
