@@ -11,14 +11,22 @@ const RoomReview = ({ userData, scroller3, propertyId }) => {
   );
 
   const reviewData = data?.map((item) => item.userReview);
-  const value = reviewData?.reduce((a, b) => a + b.value, 0) / data?.length;
-  const communication =
-    reviewData?.reduce((a, b) => a + b.communication, 0) / data?.length;
-  const location =
-    reviewData?.reduce((a, b) => a + b.location, 0) / data?.length;
-  const clean = reviewData?.reduce((a, b) => a + b.clean, 0) / data?.length;
-  const accuracy =
-    reviewData?.reduce((a, b) => a + b.accuracy, 0) / data?.length;
+
+   const value = (
+    reviewData?.reduce((a, b) => a + b.value, 0) / data?.length
+  )?.toFixed(1);
+  const communication = (
+    reviewData?.reduce((a, b) => a + b.communication, 0) / data?.length
+  )?.toFixed(1);
+  const location = (
+    reviewData?.reduce((a, b) => a + b.location, 0) / data?.length
+  )?.toFixed(1);
+  const clean = (
+    reviewData?.reduce((a, b) => a + b.clean, 0) / data?.length
+  )?.toFixed(1);
+  const accuracy = (
+    reviewData?.reduce((a, b) => a + b.accuracy, 0) / data?.length
+  )?.toFixed(1);
 
   return (
     <section ref={scroller3} className="roomReviewBar">
