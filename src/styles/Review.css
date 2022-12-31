@@ -277,7 +277,6 @@ input[type="range"]:disabled {
   overflow-y: scroll;
   margin-top: 2rem;
   display: flex;
-  align-items: center;
   gap: 2rem;
   flex-direction: column;
 }
