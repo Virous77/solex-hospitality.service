@@ -16,7 +16,13 @@ const Upcoming = ({ upcoming }) => {
   const [saveData, setSaveData] = useState("");
 
   const today = convertDate();
-  const validate = upcoming?.find((date) => date?.bookData.checkOut === today);
+  const currentYear = today.slice(6);
+  const validate = upcoming?.find(
+    (date) =>
+      date?.bookData.checkOut === today ||
+      date.bookData.checkOut <= today ||
+      date.bookData.checkOut.slice(6) <= currentYear
+  );
 
   const doneBooking = async () => {
     const saveChangeRef = doc(db, "booking", validate?.id);
